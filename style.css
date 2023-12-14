@@ -175,7 +175,7 @@ html {
 #close {
   display: none;
 }
-/* alert */
+/* alert *************************************************/
 .swal-modal {
   padding: 20px !important;
   box-shadow: 0 0 10px 5px red;
@@ -518,10 +518,23 @@ html {
     font-size: 30px;
   }
   .contact-form p, .contact-detail-container p {
-    font-size: 18px;
+    font-size: 15px;
   }
   
-
-
+  .contact-detail-container h3 {
+    margin: 20px 0 0;
+  }
+  .swal-modal {
+    width: 80%;
+    margin: 20px;
+    border-radius: 5%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+  }
+  .swal-button {
+    border-radius: 15%;
+  }
 }
 
