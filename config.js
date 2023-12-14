@@ -11,8 +11,8 @@ hamburger.addEventListener("click", () => {
   menu.style.top = "40px";
   menu.style.height = "30px";
   menu.style.textAlign = "center";
-  menu.style.backgroundColor = "rgba(86, 64, 30, 0.893)";
-  menu.style.boxShadow = "0 0 5px 5px rgba(86, 64, 30, 0.893)";
+  menu.style.backgroundColor = "rgba(0, 0, 0, 0.783)";
+  menu.style.boxShadow = "0 5px 5px 3px rgba(0, 0, 0, 0.783)";
 });
 
 Xbutton.addEventListener("click", () => {
@@ -22,7 +22,7 @@ Xbutton.addEventListener("click", () => {
 });
 
 //sending email
-    // Password: "81371FDC6625E9B873C985F9B9E240ED557F",
+// Password: "81371FDC6625E9B873C985F9B9E240ED557F",
 function sendEmail() {
   let username = document.getElementById("name").value;
   let email = document.getElementById("email").value;
