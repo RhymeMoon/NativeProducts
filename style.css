@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 *,
 *::before,
 *::after {
@@ -19,7 +21,7 @@ html {
   display: flex;
   justify-content: space-between;
   font-size: 25px;
-  background-color: rgba(86, 64, 30, 0.893);
+  background-color: rgba(0, 0, 0, 0.783);
   color: white !important;
   width: 100%;
   height: 40px;
@@ -27,7 +29,7 @@ html {
   position: sticky;
   top: 0;
   padding: 4px 100px !important;
-  box-shadow: 0 0 8px 8px rgba(86, 64, 30, 0.893);
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.783);
 }
 .brand {
   display: flex;
@@ -47,7 +49,7 @@ html {
   margin-bottom: 5px !important;
 }
 .menu-list a:hover {
-  color: rgb(0, 255, 8) !important;
+  color: rgb(255, 0, 0) !important;
   transition: 0.3s ease-in-out;
 }
 
@@ -60,7 +62,7 @@ html {
 }
 .dropdown {
   display: none;
-  box-shadow: 0 5px 5px 5px rgba(86, 64, 30, 0.893) !important;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.783) !important;
 }
 .menu-list:hover .dropdown {
   display: block;
@@ -71,7 +73,7 @@ html {
   padding: 0 10px !important;
 }
 .dropdown-list {
-  background-color: rgba(86, 64, 30, 0.893) !important;
+  background-color: rgba(0, 0, 0, 0.783) !important;
   padding: 5px !important;
   margin-bottom: 1px !important;
 }
@@ -99,10 +101,10 @@ html {
 }
 #carouselExampleCaptions,
 .carousel-item .carousel-inner {
-  height: 70vh;
+  height: 80vh;
   /* border-end-start-radius: 10px;
     border-end-end-radius: 10px; */
-}
+}-
 .carousel-caption h1,
 .carousel-caption p {
   border-radius: 10px;
@@ -115,7 +117,7 @@ html {
 }
 .carousel img {
   border: 10px double rgb(255, 255, 255);
-  height: 69vh;
+  height: 80vh;
 }
 .space {
   height: 10vh;
@@ -163,7 +165,7 @@ html {
 
 .fa-circle-chevron-left,
 .fa-circle-chevron-right {
-  color: rgb(86, 64, 30);
+  color: rgb(0, 0, 0);
   font-size: 50px;
   border-radius: 100px;
 }
@@ -173,26 +175,141 @@ html {
 #close {
   display: none;
 }
+/* alert */
+.swal-modal {
+  padding: 20px !important;
+  box-shadow: 0 0 10px 5px red;
+}
+.swal-button {
+  padding: 10px 24px !important;
+  background-color: red;
+}
+.swal-button:hover {
+  padding: 10px 24px !important;
+  background-color: rgb(255, 62, 62) !important;
+}
+/******************** CONTACT PAGE STYLE *****************************/
+#contact-top {
+  background-image: url("./image/zachary-staines-0kvS01RVKQI-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact {
+  width: 100vw;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.contact-container {
+  margin: 100px;
+  padding: 50px !important;
+  width: 500px;
+  border: 2px inset rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.605);
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.472);
+  height: fit-content;
+}
+.contact-detail-container {
+  margin: 100px 0;
+  padding: 50px !important;
+  width: fit-content;
+  border: 2px inset rgb(255, 255, 255);
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.605);
+  box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.472);
+  height: fit-content;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-form h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: -5px 5px 5px black;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+.contact-form p {
+  font-family: "Great Vibes", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: red;
+}
+.contact-form #name,
+.contact-form #email,
+.contact-form #phone,
+.contact-form #message {
+  padding: 10px !important;
+  border-radius: 5px;
+  width: 80%;
+  border: 3px solid grey;
+}
+.contact-form #name:focus,
+.contact-form #email:focus,
+.contact-form #phone:focus,
+.contact-form #message:focus {
+  border: 2px solid red;
+  outline: none;
+}
+.contact-form button {
+  padding: 10px !important;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  width: 100px;
+}
+.contact-form button:hover {
+  background: rgb(255, 55, 55);
+  color: rgb(255, 255, 255);
+}
+
+/* contact details */
+.contact-detail-container {
+  line-height: 1.5;
+}
+.contact-detail-container h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-shadow: -5px 5px 5px black;
+  font-weight: 700;
+  letter-spacing: 10px;
+  font-size: 70px;
+}
+
+.contact-detail-container p {
+  margin: 0 0 0 20px;
+}
+.working-hours {
+  display: flex;
+}
 
 /* Large devices such as laptops (1024px and up) */
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .header {
     padding: 5px 50px !important;
     font-size: 20px !important;
     height: 40px;
   }
-.dropdown-link {
-  font-size: 12px;
-}
-.arrowDown {
-  font-size: 10px;
-}
-#hamburger {
-  display: none;
-}
-#close {
-  display: none;
-}
+  .dropdown-link {
+    font-size: 12px;
+  }
+  .arrowDown {
+    font-size: 10px;
+  }
+  #hamburger {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
   #menu {
     position: absolute;
     right: 50px;
@@ -349,18 +466,18 @@ html {
   }
   .product {
     margin-bottom: 40px !important;
-    width: 100%;
+    width: 45%;
   }
   .product h1 {
-    font-size: 25px;
-  }
-  .product p {
     font-size: 20px;
   }
+  .product p {
+    font-size: 15px;
+  }
   .product img {
-    height: 250px;
+    height: 150px;
   }
   .box {
-    height: 230px;
+    height: 130px;
   }
 }
