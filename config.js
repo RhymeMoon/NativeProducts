@@ -56,6 +56,74 @@ function sendEmail() {
   });
 }
 
+// open close the slides
+let magnifies = document.querySelectorAll(".fa-magnifying-glass");
+let slideContainers = document.querySelectorAll(".slide-container");
+let slideCloseButtons = document.querySelectorAll(".close-button");
+
+magnifies.forEach((magnify, index) => {
+  magnify.addEventListener("click", () => {
+    // Check if the corresponding slide container exists
+    if (slideContainers.length > index) {
+      // Toggle the display of the corresponding slide container
+      slideContainers[index].style.display =
+        slideContainers[index].style.display === "block" ? "none" : "block";
+    }
+  });
+});
+// slideCloseButtons.forEach((closeButton, index) => {
+//   closeButton.addEventListener("click", () => {
+//     // Hide the corresponding product when the close button is clicked
+//     slideContainers[index].style.display = "none";
+//   });
+// });
+
+// // creating a slide
+// const slideItems = document.querySelectorAll(".slide-item");
+// let currentIndex = 0;
+
+// function showSlide(index) {
+//   slideItems.forEach((item) => {
+//     item.style.display = "none";
+//   });
+//   // Show the slide at the specified index
+//   slideItems[index].style.display = "block";
+// }
+
+// function nextSlide() {
+//   currentIndex = (currentIndex + 1) % slideItems.length;
+//   showSlide(currentIndex);
+// }
+// function previousSlide() {
+//   currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
+//   showSlide(currentIndex);
+// }
+// showSlide(currentIndex);
+
+// document.getElementById("nextBtn").addEventListener("click", nextSlide);
+// document.getElementById("prevBtn").addEventListener("click", previousSlide);
+
+
+
+
+//       COMMENT REMOVER
+document.addEventListener("DOMContentLoaded", function () {
+  removeComments(document.body);
+});
+
+function removeComments(element) {
+  for (let i = element.childNodes.length - 1; i >= 0; i--) {
+    let node = element.childNodes[i];
+    if (node.nodeType === 8) {
+      // Comment node type
+      element.removeChild(node);
+    } else if (node.nodeType === 1) {
+      // Element node type
+      removeComments(node); // Recursively remove comments in child elements
+    }
+  }
+}
+
 // let menu = document.getElementById('menu')
 // let btn = menu.getElementsByClassName('nav-link')
 

@@ -9,15 +9,20 @@
 html {
   box-sizing: border-box;
 }
-#home {
-  background-image: url("./image/zachary-staines-0kvS01RVKQI-unsplash.jpg");
+
+#home,
+#top {
+  background-image: url("./image/home\ background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  height: fit-content;
 }
 .header {
+  font-family: monospace;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   font-size: 25px;
@@ -25,18 +30,14 @@ html {
   color: white !important;
   width: 100%;
   height: 40px;
-  z-index: 99;
+  z-index: 99999999;
   position: sticky;
   top: 0;
   padding: 4px 100px !important;
   box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.783);
 }
-.brand {
-  display: flex;
-}
-.brand-name {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+.brand img{
+  height: 100%;
 }
 #menu {
   box-sizing: border-box;
@@ -99,81 +100,147 @@ html {
   color: rgb(255, 0, 0) !important;
   border-radius: 10px;
 }
-#carouselExampleCaptions,
-.carousel-item .carousel-inner {
-  height: 80vh;
-  /* border-end-start-radius: 10px;
-    border-end-end-radius: 10px; */
-}-
-.carousel-caption h1,
-.carousel-caption p {
-  border-radius: 10px;
-  width: 100%;
-}
-.carousel-caption {
-  height: 200px;
-  background-color: rgba(0, 0, 0, 0.472);
-  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.472);
-}
-.carousel img {
-  border: 10px double rgb(255, 255, 255);
-  height: 80vh;
-}
-.space {
-  height: 10vh;
-}
-#first-category {
-  background-color: white;
-  height: fit-content;
-  padding: 100px !important;
-  text-align: center;
-}
-#product-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.product {
-  box-sizing: border-box !important;
-  width: 400px;
-  margin: 10px;
-  position: relative;
-  text-align: left;
-}
-.product h1 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-}
-.product p {
-  margin: 20px;
-  font-size: 25px;
-}
-.product img {
-  width: 100%;
-  height: 400px;
-}
-.box {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  left: 10px;
-  height: 380px;
-  border: 5px solid rgba(255, 255, 255, 0.652);
-}
-
-.fa-circle-chevron-left,
-.fa-circle-chevron-right {
-  color: rgb(0, 0, 0);
-  font-size: 50px;
-  border-radius: 100px;
-}
 #hamburger {
   display: none;
 }
 #close {
   display: none;
+}
+/* ^^^^end of nav bar^^^^ */
+
+/* home contents  *******************************/
+#home-content {
+  background-color: rgba(0, 0, 0, 0.704);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 89vh;
+  font-family: monospace;
+  padding: 0 20px 0 !important;
+}
+.home-greetings h2 {
+  font-size: 90px;
+  font-weight: 900;
+  color: #ff4057;
+}
+.home-greetings .p1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: lighter;
+  font-size: 80px;
+
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.home-greetings a {
+  background-color: rgb(157, 0, 0);
+  padding: 15px !important;
+  color: white;
+  border-radius: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.home-greetings a:hover {
+  background-color: rgb(224, 2, 2);
+}
+/* about**************************** */
+#about {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.704);
+  text-align: center;
+  height: 70vh;
+  box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.783);
+}
+#about h1 {
+  font-size: 80px;
+  color: #ff4057;
+  font-family: monospace;
+  font-weight: 800;
+}
+
+#about h2 {
+  font-size: 50px;
+  font-family:great vibes;
+}
+#about p {
+  font-size: 30px;
+  text-align: justify;
+  margin: 0 50px;
+}
+/* product style/********************************** */
+#product-content {
+  background-color: rgb(0, 0, 0, 0.704);
+  height: fit-content;
+  padding: 0 100px !important;
+}
+
+#product-content h2 {
+  padding: 50px 0 0 !important;
+  color: white;
+  font-size: 70px;
+  font-family: cursive;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+}
+.description {
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  text-indent: 100px;
+}
+.product-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content:first baseline;
+}
+.product {
+  box-sizing: border-box;
+  background-color: rgba(255, 0, 0, 0.285);
+  width: 24%;
+  height: 600px;
+  border: 2px solid black;
+  padding: 30px !important;
+  border-radius: 10px;
+  color: white;
+  margin: 0 0.5% 10px;
+  
+  display: flex;
+  flex-direction: column;
+}
+.product img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.product .product-title {
+  font-size: 50px;
+  text-align: center;
+}
+.product p {
+  font-size: 20px;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  height: fit-content;
+}
+footer p {
+  font-size: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 10px 0 !important;
+}
+hr {
+  border: 1px solid white !important;
 }
 /* alert *************************************************/
 .swal-modal {
@@ -190,18 +257,19 @@ html {
 }
 /******************** CONTACT PAGE STYLE *****************************/
 #contact-top {
-  background-image: url("./image/zachary-staines-0kvS01RVKQI-unsplash.jpg");
+  background-image: url("./image/home\ background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 #contact {
-  width: 100vw;
-  height: 95vh;
+  width: 100%;
+  height: 90vh;
   display: flex;
   justify-content: center;
   color: white;
+  
 }
 .contact-container {
   margin: 100px;
@@ -214,7 +282,7 @@ html {
   height: fit-content;
 }
 .contact-detail-container {
-  margin: 100px 0;
+  margin: 50px 0;
   padding: 50px !important;
   width: fit-content;
   border: 2px inset rgb(255, 255, 255);
@@ -291,6 +359,8 @@ html {
   display: flex;
 }
 
+/****************Carousel inside the product ************************/
+
 /* Large devices such as laptops (1024px and up) */
 @media (max-width: 1000px) {
   .header {
@@ -314,41 +384,9 @@ html {
     position: absolute;
     right: 50px;
   }
-  #carouselExampleCaptions,
-  .carousel-item .carousel-inner {
-    height: 50vh !important;
-  }
-  .carousel img {
-    height: 50vh;
-  }
-  .space {
-    height: 5vh;
-  }
-  #first-category {
-    padding: 10px !important;
-  }
-  #product-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  .product {
-    margin-bottom: 40px !important;
-    width: 30%;
-  }
-  .product h1 {
-    font-size: 25px;
-  }
-  .product p {
-    font-size: 20px;
-  }
-  .product img {
-    height: 250px;
-  }
-  .box {
-    height: 230px;
-  }
 }
+
+/* about******************************* */
 
 /* Medium devices such as tablets (768px and up) */
 @media (max-width: 767px) {
@@ -375,65 +413,36 @@ html {
     position: absolute;
     right: 10px;
   }
-  #carouselExampleCaptions,
-  .carousel-item .carousel-inner,
-  .carousel img {
-    height: 40vh !important;
-  }
-  .carousel-caption {
-    height: 150px;
-  }
-  .space {
-    height: 5vh;
-  }
   #first-category {
     padding: 10px !important;
-  }
-  #product-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #first-category {
-    padding: 10px !important;
-  }
-  .product {
-    margin-bottom: 40px !important;
-    width: 45%;
-  }
-  .product h1 {
-    font-size: 25px;
-  }
-  .product p {
-    font-size: 20px;
-  }
-  .product img {
-    height: 250px;
-  }
-  .box {
-    height: 230px;
   }
   /* contact  */
   #contact {
     display: block;
     box-sizing: border-box;
 
-    height:fit-content;
+    height: fit-content;
   }
-  .contact-container, .contact-detail-container  {
+  .contact-container,
+  .contact-detail-container {
     width: 100%;
     padding: 30px 15px !important;
     margin: 30px 0 0;
   }
-  .contact-form h1, .contact-detail-container h1 {
+  .contact-form h1,
+  .contact-detail-container h1 {
     font-size: 30px;
   }
-  .contact-form p, .contact-detail-container p {
+  .contact-form p,
+  .contact-detail-container p {
     font-size: 18px;
   }
-  
 }
 
 @media (min-width: 200px) and (max-width: 576px) {
+#home, #top {
+ background-image: url('./image/KOLORO_1702830308885.png');
+}
   .header {
     padding: 5px 10px !important;
     font-size: 18px;
@@ -460,67 +469,87 @@ html {
     top: 5px;
     right: 20px;
   }
-  #carouselExampleCaptions,
-  .carousel-item .carousel-inner,
-  .carousel img {
-    height: 30vh !important;
+
+  /* home content mobile size */
+  #home-content {
+    height: 96vh;
+    display: block;
+    padding: 80px 10px 0 !important;
+    position: relative;
   }
-  .carousel-caption h1 {
-    font-size: 20px;
+  .home-greetings h2 {
+    font-size: 40px;
   }
-  .carousel-caption p {
+  .home-greetings .p1 {
+    font-size: 30px;
+  }
+  .home-greetings a {
     font-size: 15px;
-  }
-  .carousel-caption {
-    height: 100px;
-  }
-  .space {
-    height: 5vh;
-  }
-  #product-container {
-    width: 100%;
-  }
-  #first-category {
     padding: 10px !important;
   }
-  .product {
-    margin-bottom: 40px !important;
-    width: 40%;
+
+/* about******************** */
+#about h1{
+font-size: 50px;
+}
+#about p{
+  font-size: 15px;
+  margin: 0 20px;
+}
+
+
+
+/* product section style  */
+#product-content {
+  padding: 0 20px 0 !important;
+}
+.description {
+  font-size: 12px;
+  text-align: justify;
+}
+#product-content h2 {
+  font-size: 30px;
+}
+.product {
+  width: 49%;
+  height: 325px;
+  padding: 5px !important;
+}
+.product .product-title {
+  font-size: 18px;
+}
+.product p {
+  font-size: 15px;
+}
+
+
+  footer p {
+  font-size: 12px;
   }
-  .product h1 {
-    font-size: 15px;
-    letter-spacing: normal;
-    text-align: left;
-  }
-  .product p {
-    font-size: 12px;
-    margin: 0;
-  }
-  .product img {
-    height: 150px;
-  }
-  .box {
-    height: 130px;
-  }
+
+
+
   /* contact **********************************/
   #contact {
     display: block;
     box-sizing: border-box;
-
-    height:fit-content;
+    height: fit-content;
   }
-  .contact-container, .contact-detail-container  {
+  .contact-container,
+  .contact-detail-container {
     width: 100%;
     padding: 30px 15px !important;
-    margin: 30px 0 0;
+    margin: 30px 0 30px;
   }
-  .contact-form h1, .contact-detail-container h1 {
+  .contact-form h1,
+  .contact-detail-container h1 {
     font-size: 30px;
   }
-  .contact-form p, .contact-detail-container p {
+  .contact-form p,
+  .contact-detail-container p {
     font-size: 15px;
   }
-  
+
   .contact-detail-container h3 {
     margin: 20px 0 0;
   }
@@ -537,4 +566,3 @@ html {
     border-radius: 15%;
   }
 }
-
