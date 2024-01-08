@@ -256,13 +256,6 @@ hr {
   background-color: rgb(255, 62, 62) !important;
 }
 /******************** CONTACT PAGE STYLE *****************************/
-#contact-top {
-  background-image: url("./image/home\ background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
 #contact {
   width: 100%;
   height: 90vh;
@@ -441,7 +434,7 @@ hr {
 
 @media (min-width: 200px) and (max-width: 576px) {
 #home, #top {
- background-image: url('./image/KOLORO_1702830308885.png');
+ 
 }
   .header {
     padding: 5px 10px !important;
