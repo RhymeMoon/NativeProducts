@@ -73,35 +73,6 @@
       </div>
 
       <section id="contact">
-        <div class="contact-container">
-          <form
-            action="submit"
-            class="contact-form"
-            onsubmit="sendEmail(); reset(); return false;"
-          >
-            <h1>Email Us</h1>
-            <p><b>We'd Love to Hear From You</b></p>
-            <input type="text" id="name" placeholder="Your Name" required />
-            <br />
-            <input type="email" id="email" placeholder="Email" required /><br />
-            <input
-              type="number"
-              id="phone"
-              placeholder="Phone Number"
-              required
-            />
-            <br />
-            <textarea
-              name=""
-              id="message"
-              cols="30"
-              rows="4"
-              placeholder="How can we help you?"
-            ></textarea
-            ><br />
-            <button type="submit">Send</button>
-          </form>
-        </div>
         <div class="contact-detail">
           <div class="contact-detail-container">
             <h1>Contact Details:</h1>
@@ -144,6 +115,36 @@
             </div>
           </div>
         </div>
+        <div class="contact-container">
+          <form
+            action="submit"
+            class="contact-form"
+            onsubmit="sendEmail(); reset(); return false;"
+          >
+            <h1>Email Us</h1>
+            <p><b>We'd Love to Hear From You</b></p>
+            <input type="text" id="name" placeholder="Your Name" required />
+            <br />
+            <input type="email" id="email" placeholder="Email" required /><br />
+            <input
+              type="number"
+              id="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <br />
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="4"
+              placeholder="How can we help you?"
+            ></textarea
+            ><br />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+       
       </section>
     </div>
     <footer>
