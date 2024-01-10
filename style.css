@@ -200,7 +200,7 @@ html {
   box-sizing: border-box;
   background-color: rgba(255, 0, 0, 0.285);
   width: 24%;
-  height: 600px;
+  height: fit-content;
   border: 2px solid black;
   padding: 30px !important;
   border-radius: 10px;
@@ -212,7 +212,7 @@ html {
 }
 .product img {
   width: 100%;
-  height: 350px;
+  height: 450px;
   border-radius: 10px;
 }
 .product .product-title {
@@ -220,10 +220,10 @@ html {
   text-align: center;
 }
 .product-price {
-  font-size: 20px;
+  font-size: 25px;
 }
 .product-description {
-  font-size: 12px;
+  font-size: 20px;
 }
 
 footer {
@@ -503,6 +503,7 @@ font-size: 50px;
 }
 #product-content h2 {
   font-size: 30px;
+  padding-top: 10px !important;
 }
 .product {
   width: 49%;
@@ -510,7 +511,7 @@ font-size: 50px;
   padding: 5px !important;
 }
 .product img {
-  height: 175px;
+  height: 100%;
 }
 .product .product-title {
   font-size: 14px;
