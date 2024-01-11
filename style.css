@@ -518,7 +518,8 @@ font-size: 50px;
 /* loading */
 .inline {
   background-image: url('./image/davao-local-craft-store-logo-zip-file/png/mobile_loading.png');
-
+  align-items: baseline;
+  padding-top: 250px !important;
 }
 .spinner i{
   font-size: 100px;
