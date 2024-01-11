@@ -21,6 +21,21 @@ Xbutton.addEventListener("click", () => {
   menu.style.display = "none";
 });
 
+///loading animation
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+        "body").style.visibility = "hidden";
+      document.querySelector(
+        ".inline").style.visibility = "visible";
+  } else {
+      document.querySelector(
+        ".inline").style.display = "none";
+      document.querySelector(
+        "body").style.visibility = "visible";
+  }
+};
+
 //sending email
 // Password: "81371FDC6625E9B873C985F9B9E240ED557F",
 function sendEmail() {

@@ -9,6 +9,31 @@
 html {
   box-sizing: border-box;
 }
+/* loading animation */
+#spinner   {  
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.inline{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+background-image: url('./image/davao-local-craft-store-logo-zip-file/png/logo-color.png');
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.spinner i{
+font-size: 200px;
+color: white;  
+}
 
 #home,
 #top {
@@ -110,7 +135,7 @@ html {
 
 /* home contents  *******************************/
 #home-content {
-  background-color: rgba(0, 0, 0, 0.704);
+  background-color: rgba(0, 0, 0, 0.778);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -147,7 +172,7 @@ html {
 /* about**************************** */
 #about {
   color: white;
-  background-color: rgb(0, 0, 0, 0.704);
+  background-color: rgb(0, 0, 0, 0.778);
   text-align: center;
   height: 70vh;
   box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.783);
@@ -170,7 +195,7 @@ html {
 }
 /* product style/********************************** */
 #product-content {
-  background-color: rgb(0, 0, 0, 0.704);
+  background-color: rgb(0, 0, 0, 0.778);
   height: fit-content;
   padding: 0 100px !important;
 }
@@ -273,7 +298,7 @@ hr {
   width: 500px;
   border: 2px inset rgb(255, 255, 255);
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.605);
+  background-color: rgba(0, 0, 0, 0.778);
   box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.472);
   height: fit-content;
 }
@@ -283,7 +308,7 @@ hr {
   width: fit-content;
   border: 2px inset rgb(255, 255, 255);
   border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.605);
+  background-color: rgba(0, 0, 0, 0.778);
   box-shadow: -5px 5px 5px 5px rgba(0, 0, 0, 0.472);
   height: fit-content;
 }
@@ -490,7 +515,14 @@ font-size: 50px;
   margin: 0 20px;
 }
 
+/* loading */
+.inline {
+  background-image: url('./image/davao-local-craft-store-logo-zip-file/png/mobile_loading.png');
 
+}
+.spinner i{
+  font-size: 100px;
+}
 
 /* product section style  */
 #product-content {
