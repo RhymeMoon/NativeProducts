@@ -9,6 +9,9 @@
 html {
   box-sizing: border-box;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 /* loading animation */
 #spinner   {  
   animation: spin 0.5s linear infinite;
